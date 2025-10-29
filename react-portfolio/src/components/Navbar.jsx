@@ -65,7 +65,7 @@ return (
                         <div className='absolute top-full right-0 mt-2 w-48 bg-black-800 rounded-lg shadow-lg invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border-2 border-gray-600'>
                             <div className='py-2'>
                                 <ul>
-                                <li><a href='"mailto:aditya.mallick.1512@gmail.com"' target='_blank' rel='noopener noreferrer' 
+                                <li><a href="mailto:aditya.mallick.1512@gmail.com" target='_blank' rel='noopener noreferrer' 
                                    className='block px-4 py-2 text-white hover:[color: #790086] hover:text-white transition-colors duration-200 no-underline'>
                                     Email
                                 </a>

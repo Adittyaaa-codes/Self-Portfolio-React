@@ -18,7 +18,7 @@ const ProjectCard = ({ project = {} }) => {
             <div className='bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105'>
                 <div className='h-48 bg-gradient-to-br from-purple-600/20 to-purple-800/20 flex items-center justify-center'>
                     <div className='text-6xl'>
-                        <img src={img} alt="" />
+                        <img src={img} alt="" className='rounded-2xl' style={{ objectFit: "cover", width: "100%", maxHeight: "150px" }} />
                     </div>
                 </div>
                 <div className='p-6'>

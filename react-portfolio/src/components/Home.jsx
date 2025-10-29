@@ -65,13 +65,13 @@ const Home = () => {
                                     Download CV
                                 </button>
                                 <button>
-                                    <a href="" >
+                                    <a href="https://github.com/Adittyaaa-codes" target='_blank' >
                                         GitHub
                                     </a>
                                 </button>
 
                                 <button>
-                                    <a href="">
+                                    <a href="https://www.linkedin.com/in/aditya-mallick-1512/" target='_blank' >
                                         LinkedIn
                                     </a>
                                 </button>

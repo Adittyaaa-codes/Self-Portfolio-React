@@ -7,18 +7,15 @@ export const About = () => {
                 <div className='max-w-5xl mx-auto'>
                     <h1 className='sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent leading-tight'>About Me</h1>
 
-                    <div className='mt-6 text-gray-300 text-lg sm:text-xl leading-relaxed space-y-4'>
+                    <div className='mt-6 mb-20 text-gray-300 text-lg sm:text-xl leading-relaxed space-y-4 '>
                         <p>
-                            Hello! I'm Aditya Mallick, from Bhubaneswar, Odisha. I am a Full Stack Developer currently pursuing my undergraduate studies in Computer Science and Engineering and Artificial Intelligence. I love building web applications, as well as exploring the world of artificial intelligence.
+                        I’m Aditya Mallick, a second-year B.Tech student in Computer Science and Engineering (Artificial Intelligence) at GITA Autonomous College, Bhubaneswar. As a passionate learner in the field of software development and artificial intelligence, I am currently focused on building a strong foundation in Full-Stack Development and AI implementation.
                         </p>
                         <p>
-                            My journey into coding began with a curiosity to understand how things work behind the scenes on the web. Over time, I have honed my skills in various technologies including React, Node.js, and MongoDB for full stack development. Additionally, I am deeply interested in AI and its potential to revolutionize various industries.
+                        I have hands-on experience participating in hackathons, where I learned the importance of effective collaboration, problem-solving, and project management in a team environment. These experiences have enhanced my ability to work under pressure and contribute meaningfully to team-driven goals.
                         </p>
                         <p>
-                            When I'm not coding, I enjoy staying updated with the latest tech trends, contributing to open-source projects, and collaborating with fellow developers. I'm always eager to learn new technologies and take on challenging projects that push my boundaries.
-                        </p>
-                        <p>
-                            Feel free to explore my projects and get in touch if you'd like to collaborate or just say hello!
+                        At present, I am exploring how to implement AI-driven workflows, automations, and agentic systems using pretrained large language models (LLMs). While I have not yet gained industry-level experience, I am actively seeking opportunities to apply my technical knowledge, gain practical exposure, and continue improving through real-world challenges.
                         </p>
                     </div>
                 </div>
