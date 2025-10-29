@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+a {
+  font-weight: 500;
+  color: #ededed;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at top left, #410b54 0%, #240130 20%, #000000 50%);
+  color: #ffffff;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars for all browsers */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Custom Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+button:hover {
+  color: #9810fa;
+}
+
+li:hover{
+  background-color: #9810fa;
+}
+
+hr{
+  color: #213547;
+}
+
+.projectlastcard{
+  background-color: #111116;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
