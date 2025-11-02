@@ -62,25 +62,23 @@ return (
                         </button>
                         
                         {/* Dropdown Menu */}
-                        <div className='absolute top-full right-0 mt-2 w-48 bg-black-800 rounded-lg shadow-lg invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border-2 border-gray-600'>
+                        <div className='absolute top-full right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border-2 border-gray-600'>
                             <div className='py-2'>
                                 <ul>
-                                <li><a href="mailto:aditya.mallick.1512@gmail.com" target='_blank' rel='noopener noreferrer' 
-                                   className='block px-4 py-2 text-white hover:[color: #790086] hover:text-white transition-colors duration-200 no-underline'>
-                                    Email
+                                <li><a href="mailto:aditya.mallick.1512@gmail.com" 
+                                   className='block px-4 py-2 text-white hover:text-purple-400 transition-colors duration-200 no-underline'>
+                                    Mail Me
                                 </a>
                                 </li>
                                 <li><a href='https://www.linkedin.com/in/aditya-mallick-7836692b6/' target='_blank' rel='noopener noreferrer'
-                                   className='block px-4 py-2 text-white hover:[color: #790086] hover:text-white transition-colors duration-200 no-underline'>
+                                   className='block px-4 py-2 text-white hover:text-purple-400 transition-colors duration-200 no-underline'>
                                     LinkedIn
                                 </a></li>
                                 <li><a href='https://github.com/Adittyaaa-codes' target='_blank' rel='noopener noreferrer' 
-                                   className='block px-4 py-2 text-white hover:[color: #790086] hover:text-white transition-colors duration-200 no-underline'>
+                                   className='block px-4 py-2 text-white hover:text-purple-400 transition-colors duration-200 no-underline'>
                                     GitHub
                                 </a>
                                 </li>
-                                
-                                
                                 </ul>
                             </div>
                         </div>
@@ -116,23 +114,19 @@ return (
                         </NavLink>
 
                         <div className='border-t border-gray-600 pt-3 mt-2'>
-                            <p className='text-gray-400 text-sm mb-2'>SOCIAL LINKS</p>
+                            <p className='text-gray-400 text-sm mb-2'>CONTACT</p>
                             <div className='flex flex-col gap-2'>
-                                <a href='https://github.com' target='_blank' rel='noopener noreferrer' 
+                                <a href='mailto:aditya.mallick.1512@gmail.com' 
                                    className='text-white hover:text-purple-400 transition-colors duration-200 no-underline text-sm'>
-                                    GitHub
+                                    Mail Me
                                 </a>
-                                <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'
+                                <a href='https://www.linkedin.com/in/aditya-mallick-7836692b6/' target='_blank' rel='noopener noreferrer'
                                    className='text-white hover:text-purple-400 transition-colors duration-200 no-underline text-sm'>
                                     LinkedIn
                                 </a>
-                                <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'
+                                <a href='https://github.com/Adittyaaa-codes' target='_blank' rel='noopener noreferrer' 
                                    className='text-white hover:text-purple-400 transition-colors duration-200 no-underline text-sm'>
-                                    Twitter
-                                </a>
-                                <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'
-                                   className='text-white hover:text-purple-400 transition-colors duration-200 no-underline text-sm'>
-                                    Instagram
+                                    GitHub
                                 </a>
                             </div>
                         </div>

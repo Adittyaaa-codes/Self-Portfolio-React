@@ -45,21 +45,22 @@ export { projectOne, projectTwo, projectThree };
 const Projects = () => {
   return (
     <>
-        <div className='flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 mt-4'>
-                <div className='max-w-5xl mx-auto'>
+        <div className='min-h-screen px-6 sm:px-8 lg:px-12 pt-24 mt-4'>
+                <div className='max-w-6xl mx-auto'>
                     <h2 className='text-3xl font-bold text-white mb-8 text-center'>My Projects</h2>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>       
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8'>       
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />             
                         <ProjectCard project={projectThree} />             
                         <ProjectCard project={projectFour} />  
-                        
-
-                                  
                     </div>
-                    <div className='projectlastcard flex w-5xl rounded-3xl mt-8 mb-8  items-center justify-center' style={{height:"8em", fontSize:"1.5em", color:"gray"}}>
-                            More Projects will be added soon...😁
-                        </div> 
+                    <div className='w-full max-w-md mx-auto lg:max-w-none lg:col-span-2 mt-8 mb-8'>
+                        <div className='bg-gray-800/30 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 sm:p-8 text-center hover:border-purple-500/40 transition-all duration-300'>
+                            <div className='text-lg sm:text-xl lg:text-2xl text-gray-400 font-medium'>
+                                More Projects will be added soon...
+                            </div>
+                        </div>
+                    </div> 
                 </div>
         </div>
     </>

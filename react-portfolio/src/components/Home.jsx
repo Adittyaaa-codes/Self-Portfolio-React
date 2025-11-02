@@ -59,7 +59,7 @@ const Home = () => {
 
                             {/* CTA Buttons */}
                             <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4'>
-                                <button className='border-2 border-purple-500 text-purple-400 hover:text-white  hover:bg-purple-500 px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105' 
+                                <button className='border-2 border-purple-500 text-purple-500 hover:text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105'
 
                                 onClick={sorry_msg}>
                                     Download CV
@@ -108,8 +108,8 @@ const Home = () => {
             </div>
 
             {/* Projects Section */}
-            <div className='py-20 px-4 sm:px-6 lg:px-8'>
-                <div className='max-w-5xl mx-auto'>
+            <div className='py-20 px-6 sm:px-8 lg:px-12'>
+                <div className='max-w-6xl mx-auto'>
                     {/* Section Header */}
                     <div className='text-center mb-16'>
                         <h2 className='text-4xl sm:text-5xl font-bold bg-linear-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent leading-tight mb-4 '>
@@ -121,7 +121,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8'>
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />
                     </div>
@@ -136,62 +136,58 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
+            {/* Skills Section */}
+            <div className='py-20 px-4 sm:px-6 lg:px-8'>
                 <div className='max-w-5xl mx-auto'>
                     <div className='text-center mb-16'>
                         <h2 className='text-4xl sm:text-5xl font-bold bg-linear-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent leading-tight mb-4'>
                             Relevant Skills
                         </h2>
                     </div>
-                    <div className='flex flex-wrap items-center-safe justify-center' >
-                        <div className='flex flex-wrap items-center-safe justify-center-safe  w-5xl rounded-2xl mb-4' style={{ height: '500px' }}>
-                            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 '>
-                                <div className='p-5 m-4 rounded-2xl text-center' style={{ height: '420px', backgroundColor: '#131521'}}>
-                                    <h1 className='text-2xl font-semibold mb-2'>Web Development</h1>
-                                    <hr className='mb-4' />
-                                    <div className='flex flex-wrap gap-2 justify-center'>
-                                        {web_technologies.map((tech, index) => (
-                                            <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-10 mb-2'>
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    
-                                </div>
-                                <div className='p-5  m-4 rounded-2xl text-center' style={{ height: '420px' , backgroundColor: '#131521'}}>
-                                    <h1 className='text-2xl font-semibold mb-2'>AI</h1>
-                                    <hr className='mb-4' />
-                                    <div className='flex flex-wrap gap-2 justify-center'>
-                                        {ai_technologies.map((tech, index) => (
-                                            <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-10 mb-2'>
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    
-                                </div>
-                                <div className='p-5  m-4 rounded-2xl text-center' style={{ height: '420px', backgroundColor: '#131521' }}>
-                                    <h3 className='text-2xl font-semibold mt-3 '>DataBases</h3>
-                                    <hr className='mt-1 bg-gray-700 mx-auto mb-4' />
-                                    <div className='flex flex-wrap gap-2 justify-center'>
-                                    <span className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-10 mb-2'>
-                                                MongoDB
-                                            </span>
-                                    <span className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-10 mb-2'>
-                                                MySQL
-                                            </span>
-                                    </div>
-                                    <h1 className='text-xl font-semibold mb-2 mt-20'>Others</h1>
-                                    <hr className='mb-4' />
-                                    <div className='flex flex-wrap gap-2 justify-center'>
-                                        {other_technologies.map((tech, index) => (
-                                            <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-10 mb-2'>
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    
-                                </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                        <div className='p-6 rounded-2xl text-center bg-gray-800/50 backdrop-blur-sm border border-purple-500/20'>
+                            <h3 className='text-2xl font-semibold mb-4'>Web Development</h3>
+                            <hr className='mb-4 border-purple-500/30' />
+                            <div className='flex flex-wrap gap-2 justify-center'>
+                                {web_technologies.map((tech, index) => (
+                                    <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs mb-2'>
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        <div className='p-6 rounded-2xl text-center bg-gray-800/50 backdrop-blur-sm border border-purple-500/20'>
+                            <h3 className='text-2xl font-semibold mb-4'>AI</h3>
+                            <hr className='mb-4 border-purple-500/30' />
+                            <div className='flex flex-wrap gap-2 justify-center'>
+                                {ai_technologies.map((tech, index) => (
+                                    <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs mb-2'>
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        <div className='p-6 rounded-2xl text-center bg-gray-800/50 backdrop-blur-sm border border-purple-500/20'>
+                            <h3 className='text-2xl font-semibold mb-4'>Databases</h3>
+                            <hr className='mb-4 border-purple-500/30' />
+                            <div className='flex flex-wrap gap-2 justify-center mb-6'>
+                                <span className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs mb-2'>
+                                    MongoDB
+                                </span>
+                                <span className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs mb-2'>
+                                    MySQL
+                                </span>
+                            </div>
+                            <h3 className='text-xl font-semibold mb-4'>Others</h3>
+                            <hr className='mb-4 border-purple-500/30' />
+                            <div className='flex flex-wrap gap-2 justify-center'>
+                                {other_technologies.map((tech, index) => (
+                                    <span key={index} className='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs mb-2'>
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
                         </div>
                     </div>
