@@ -93,7 +93,7 @@ const Home = () => {
 
                                     <div className='absolute inset-6 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 border-4 border-purple-500/50 flex items-center justify-center overflow-hidden'>
                                         <div className='text-6xl sm:text-7xl text-purple-400'>
-                                            <img src="public/Gemini_Generated_Image_rxxe36rxxe36rxxe.png" alt="profile" />
+                                            <img src="https://res.cloudinary.com/dsoum78xj/image/upload/v1762055367/Gemini_Generated_Image_yz1urtyz1urtyz1u_yp0myk.png" alt="profile" />
                                         </div>
                                     </div>
 
